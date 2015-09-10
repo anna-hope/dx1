@@ -67,7 +67,7 @@ def write_dx1(counted_items: Counter, file: 'FileObject',
     if sort == 'most_common':
         counted_words = counted_items.most_common()
     elif sort == 'alpha':
-        counted_words = sorted(counted_items.items(), key=lambda item: item[1])
+        counted_words = sorted(counted_items.items(), key=lambda item: item[0])
     else:
         counted_words = counted_items.items()
 
